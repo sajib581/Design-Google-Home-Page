@@ -20,11 +20,10 @@ section header {
   margin-right: 40px;
 }
 section header ul {
+  font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 20px;
-  margin-top: 30px;
 }
 section header ul li {
   list-style: none;
@@ -55,6 +54,8 @@ section header ul li button {
   position: relative;
   width: 100%;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .main .searchBox .search {
@@ -71,7 +72,7 @@ section header ul li button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 .main .buttons {
   margin-top: 20px;
@@ -91,20 +92,41 @@ section header ul li button {
   background: #f2f2f2;
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
 .footer .row {
   display: flex;
   justify-content: space-between;
 }
-.footer .row ul {
+section .footer .row ul {
   display: flex;
 }
 .footer .row ul li {
   list-style: none;
-  margin-right: 25px;
 }
 .footer .row ul li a {
   text-decoration: none;
   color: #5f6368;
+  font-size: 14px;
+  margin-right: 25px;
+}
+
+/* Mobile-View */
+@media (max-width: 768px) {
+  .main .searchBox .search {
+    width: 70%;
+  }
+  .main .searchBox .icons {
+    width: 75%;
+  }
+  section .footer .row ul {
+    display: block;
+  }
+}
+/*Tablet View*/
+@media (min-width: 769px) and (max-width: 1023px) {
+  section header ul li button {
+    background-color: tomato;
+  }
 }
